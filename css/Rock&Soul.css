@@ -95,14 +95,15 @@ img{
 .header_texto{
     text-align: center;
     color: var(--negro);
-    margin-top: 20rem;
+    margin-top: 10rem;
+    padding-left: 20rem;
 }
 
 .barra{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 12rem;
+    padding-top: 3rem;
 }
 
 .logo{
@@ -128,12 +129,18 @@ img{
     text-align: center;
     font-size: 3.5rem;
     color: var(--blanco);
-    -webkit-text-stroke: 1.5px var(--negro);
+    -webkit-text-stroke: 1px var(--blanco);
     font-weight: 900;
 }
 
 .cotenedor-principal{
     padding-top: 4rem;
+}
+
+image{
+    width: 70%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 .footer{
     background-image: url(/img/background-bar-black-equalizer-wallpaper-preview.jpg);
@@ -151,6 +158,43 @@ img{
     text-align: center;
     font-size: 3.5rem;
     color: var(--blanco);
-    -webkit-text-stroke: 1.5px var(--negro);
+    -webkit-text-stroke: 1px var(--blanco);
     font-weight: 900;
+}
+
+/* Acerca de Nosotros*/
+
+.nosotros{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 2rem;
+}
+
+.nosotros_imagen{
+    border: 5px solid var(--blanco);
+    width: 300px;
+    display: flex;
+    margin-left: 15rem;
+    gap: 40rem;
+}
+
+#img2_nosotros{
+    border: 5px solid var(--blanco);
+}
+
+.nosotros_texto{
+    color: var(--blanco);
+    margin-left: 2rem;
+}
+
+.h1-contacto{
+    font-family: var(--FuenteTexto);
+    font-size: 6rem;
+    padding-top: 6rem;
+    margin-right: 40rem;
+}
+
+p{
+    font-size: 2rem;
+    padding-top: 2rem;
 }
