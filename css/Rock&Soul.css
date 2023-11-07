@@ -49,7 +49,7 @@ body{
     line-height: 2;
 }
 
-.conenedor{
+.contenedor{
     width: min (90%,120rem);
     margin:0 auto;
 }
@@ -162,6 +162,17 @@ image{
     font-weight: 900;
 }
 
+@keyframes escalar{
+    100%{transform: scale(1.2);}
+}
+.navegacion_enlace:hover{
+    animation: escalar 2s infinite;
+}
+
+.navegacion_enlaceF:hover{
+    animation: escalar 2s infinite;
+}
+
 /* Acerca de Nosotros*/
 
 .nosotros{
@@ -197,4 +208,61 @@ image{
 p{
     font-size: 2rem;
     padding-top: 2rem;
+}
+
+/*Contacto*/
+
+.Contacto-gb{
+    background-image: url(/img/guitarraacústica-0-Somsak-Sudthangtum-40950045_l-scaled-1.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.formulario{
+    background-color: rgb(209, 114, 19);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-family: var(--FuenteHeading);
+    color: var(--blanco);
+    
+}
+
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+.campo_field{
+    flex: 1;
+    border: 3px solid var(--negro);
+}
+
+.campo_field--textarea{
+    height: 20rem;
+}
+
+.boton{
+    display: inline-block;
+    font-family: var(--FuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.boton--primario{
+    background-color: var(--negro);
 }
