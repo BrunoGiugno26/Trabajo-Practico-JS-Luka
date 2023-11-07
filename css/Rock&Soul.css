@@ -1,0 +1,156 @@
+/*
+font family:font-family: 'Roboto', sans-serif;
+font family:font-family: 'Libre Franklin', sans-serif;
+*/
+
+/*
+Css para Rock & Soul Html
+*/
+
+:root{
+    --FuenteHeading:'Roboto', sans-serif;
+    --FuenteTexto:'Libre Franklin', sans-serif;
+    --Primario: rgb(214, 61, 61);
+    --Secunadrio:rgb(193, 215, 218);
+    --blanco:white;
+    --negro:black;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+/*UTILIDADES*/
+
+.padding-top{
+    padding-top: 4rem;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+body{
+    font-family: var(--FuenteHeading);
+    background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(36, 35, 35));
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.conenedor{
+    width: min (90%,120rem);
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--FuenteHeading);
+    line-height: 1.2;
+    -webkit-text-stroke: 0.5px var(--blanco);
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.header{
+    background-image: url(/img/rainbow-abstract-digital-art-dark-background-sound-wave-wallpaper-preview.jpg);
+    height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto{
+    text-align: center;
+    color: var(--negro);
+    margin-top: 20rem;
+}
+
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12rem;
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo_nombre{
+    font-weight: 500;
+    font-size: 11rem;
+}
+
+.logo_bold{
+    font-weight: 700;
+}
+
+.navegacion{
+    display: flex;
+    gap: 3rem;
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--blanco);
+    -webkit-text-stroke: 1.5px var(--negro);
+    font-weight: 900;
+}
+
+.cotenedor-principal{
+    padding-top: 4rem;
+}
+.footer{
+    background-image: url(/img/background-bar-black-equalizer-wallpaper-preview.jpg);
+    background-color: var(--negro);
+    padding-bottom: 0.4rem;
+    margin-top: 4rem;
+}
+.logo_nombreF{
+    font-weight: 500;
+    font-size: 11rem;
+}
+
+.navegacion_enlaceF{
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--blanco);
+    -webkit-text-stroke: 1.5px var(--negro);
+    font-weight: 900;
+}
