@@ -34,96 +34,94 @@
     </header>
     <main class="contenedor">
         <h1 class="centrar-texto no-margin h1-main">Guitarras</h1>
-        <section class="cotenido">
+        <section class="contenido">
             <div class="mostrador" id="mostrador">
                 <div class="fila">
-
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-1.png" alt="">
-                            <p class="descripcion">Gibson Les Paul</p>
-                            <span class="precio">$ 300.000</span>
+                            <img src="/img/Guitar-1.png" alt="">
                         </div>
+                        <p class="descripcion">Gibson Les Paul</p>
+                        <span class="precio">$ 300.000</span>
                     </div>
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-2.png" alt="">
-                            <p class="descripcion">Gibson ES-339</p>
-                            <span class="precio">$ 800.000</span>
+                            <img src="/img/Guitar-2.png" alt="">
                         </div>
+                        <p class="descripcion" id>Gibson ES-339 </p>
+                        <span class="precio">$ 800.000</span>
                     </div>
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-3.png" alt="">
-                            <p class="descripcion">Gibson Les Paul "Standard"</p>
-                            <span class="precio">$ 450.000</span>
+                            <img src="/img/Guitar-3.png" alt="">
                         </div>
+                        <p class="descripcion">Gibson Les Paul "Standard"
+                        </p>
+                        <span class="precio">$450.000</span>
                     </div>
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-4.png" alt="">
-                            <p class="descripcion">Taylor Acustica</p>
-                            <span class="precio">$ 1.000.000</span>
+                            <img src="/img/Guitar-4.png" alt="">
                         </div>
+                        <p class="descripcion">Taylor Acustica</p>
+                        <span class="precio">$ 1.000.0000</span>
                     </div>
                 </div>
                 <div class="fila">
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-5.png" alt="">
-                            <p class="descripcion">Ibanez Acustica</p>
-                            <span class="precio">$ 280.000</span>
+                            <img src="/img/Guitar-5.png" alt="">
                         </div>
+                        <p class="descripcion">Ibanez Acustica</p>
+                        <span class="precio">$ 280.000</span>
                     </div>
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-6.png" alt="">
-                            <p class="descripcion">Ibanez Acustica</p>
-                            <span class="precio">$ 450.000</span>
+                            <img src="/img/Guitar-6.png" alt="">
                         </div>
+                        <p class="descripcion">Ibanez Acustica</p>
+                        <span class="precio">$ 450.000</span>
                     </div>
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-7.png" alt="">
-                            <p class="descripcion">Gibson SG "Angus Young"</p>
-                            <span class="precio">$ 950.000</span>
+                            <img src="/img/Guitar-7.png" alt="">
                         </div>
+                        <p class="descripcion">Gibson SG "Angus Young"</p>
+                        <span class="precio">$ 950.000</span>
                     </div>
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
-                            <img class="img-fila" src="/img/Guitar-8.jpg" alt="">
-                            <p class="descripcion">Fender Stratocaster</p>
-                            <span class="precio">$ 1.200.000</span>
+                            <img src="/img/Guitar-8.jpg" alt="">
                         </div>
+                        <p class="descripcion">Fender Stratocaster</p>
+                        <span class="precio">$ 1.200.000</span>
                     </div>
-                </div>
+                </div> 
             </div>
-
-            <!--Contenedor del Item Seleccionado-->
+            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
             <div class="seleccion" id="seleccion">
                 <div class="cerrar" onclick="cerrar()">
-
+                    &#x2715
                 </div>
                 <div class="info">
-                    <img src="/img/Guitar-1.png" alt="" id="img">
+                    <img src="img/1.png" alt="" id="img">
                     <h2 id="modelo">Gibson Les Paul</h2>
-                    <p id="descripcion">Descripcion Guitarra 1</p>
-
+                    <p id="descripcion">Descripción Guitarra Les Paul</p>
+    
                     <span class="precio" id="precio">$ 300.000</span>
-                    
-                    <div class="fila" id="fila">
+    
+                    <div class="fila">
                         <div class="cantidad">
-                            <label class="label-fila" for="">Cantidad</label>
-                            <select name="name" id="">
+                            <label for="">Cantidad</label>
+                            <select name="" id="">
                                 <option value="">1</option>
                                 <option value="">2</option>
                                 <option value="">3</option>
                                 <option value="">4</option>
                             </select>
                         </div>
-                        <button>Agregar al carrito</button>
+                        <button>Agregar Al Carrito</button>
                     </div>
-
                 </div>
             </div>
         </section>

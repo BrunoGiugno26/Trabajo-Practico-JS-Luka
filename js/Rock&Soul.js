@@ -1,11 +1,11 @@
+//*Rock & Soul java
+
 let mostrador = document.getElementById("mostrador");
 let seleccion = document.getElementById("seleccion");
 let imgSeleccionada = document.getElementById("img");
-let modeloSleccionado = document.getElementById("modelo");
-let desripSeleccionada = document.getElementById("descripcion");
-let precoSeleccionado = document.getElementById("precio");
-
-//* Funcion que va a cargar la informacion de las guitarras
+let modeloSeleccionado = document.getElementById("modelo");
+let descripSeleccionada = document.getElementById("descripcion");
+let precioSeleccionado = document.getElementById("precio");
 
 function cargar(item){
     quitarBordes();
@@ -14,26 +14,26 @@ function cargar(item){
     seleccion.style.opacity = "1";
     item.style.border = "2px solid red";
 
-    imgSeleccionada.src = item.getElementByTagName("img-fila")[1].src;
+    imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
 
-    modeloSleccionado.innerHTML = item.getElementByTagName("p")[0].innerHTML;
+    modeloSeleccionado.innerHTML =  item.getElementsByTagName("p")[0].innerHTML;
 
-    desripSeleccionada.innerHTML = "Descripcion del modelo";
+    descripSeleccionada.innerHTML = "Descripción del modelo ";
 
-    precoSeleccionado.innerHTML = item.getElementByTagName ("span") [0].innerHTML
+    precioSeleccionado.innerHTML =  item.getElementsByTagName("span")[0].innerHTML;
+
 
 }
-
 function cerrar(){
     mostrador.style.width = "100%";
     seleccion.style.width = "0%";
     seleccion.style.opacity = "0";
     quitarBordes();
 }
-
 function quitarBordes(){
     var items = document.getElementsByClassName("item");
-    for(i=0;i < items.length;i++){
+    for(i=0;i <items.length; i++){
         items[i].style.border = "none";
     }
 }
+
