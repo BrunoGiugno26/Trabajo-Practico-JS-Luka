@@ -44,7 +44,7 @@ html{
 
 body{
     font-family: var(--FuenteHeading);
-    background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(36, 35, 35));
+    background-image: linear-gradient(to right,rgb(245, 241, 241),rgb(247, 233, 233));
     font-size: 1.6rem;
     line-height: 2;
 }
@@ -83,7 +83,7 @@ h4{
 img{
     max-width: 100%;
 }
-
+/*Rock & Soul (Index Principal)*/
 .header{
     background-image: url(/img/rainbow-abstract-digital-art-dark-background-sound-wave-wallpaper-preview.jpg);
     height: 35rem;
@@ -137,9 +137,144 @@ img{
     padding-top: 4rem;
 }
 
+.h1-main{
+    font-family: var(--FuenteTexto);
+    font-size: 6rem;
+    padding-top: 6rem;
+    margin: 10rem;
+    
+}
+
+
+
+.contenido{
+    max-width:120rem; 
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%;
+    height: 15rem;
+    transition: .5s ease;
+}
+
+.fila{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 4rem;
+}
+.item{
+    max-width: 50rem; 
+    padding: 3rem;  
+    height: 25rem;
+    text-align: center;
+    margin: 5rem;
+    cursor: pointer;
+    border-radius: 10rem;
+    transition: .3s;
+}
+
+.item:hover{
+    background-color: rgb(209, 201, 201);
+}
+
+.img-fila{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.descripcion{
+    color: #707070;
+    font-weight: bold;
+    
+}
+
+.precio{
+    color:red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.seleccion{
+    transition: .5s ease ;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cerrar{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.info{
+    padding: 4rem;
+}
+
+img{
+    display: block;
+    margin: 3rem;
+    width:80%;
+}
+
+#modelo{
+    color: rgb(71, 69, 69);
+    margin-bottom: 1rem;
+}
+#descripcion{
+    font-size: 1.4rem;
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+#precio{
+    font-size: 3rem;
+    font-weight:bold;
+    color: red;
+    margin-bottom: 1rem;
+    display: block;
+}
+#fila{
+    display: flex;
+    align-items:flex-end;
+}
+
+.label-fila{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+select{
+    width: 10rem;
+    font-size: 1.8rem;
+    padding: 0.6rem;
+    margin-right: 3rem;
+}
+
+button{
+    height: 4rem;
+    border: none;
+    padding: 0 1rem;
+    color: #fff;
+    background-color: red;
+}
+
+
+
+
 image{
     width: 70%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 7/6;
     object-fit: contain;
 }
 .footer{
@@ -190,11 +325,13 @@ image{
 }
 
 #img2_nosotros{
-    border: 5px solid var(--blanco);
+    border: 5px solid var(--negro);
 }
 
 .nosotros_texto{
-    color: var(--blanco);
+    color: var(--negro);
+    font-family: var(--FuenteTexto);
+    padding-top: 3rem;
     margin-left: 2rem;
 }
 
@@ -206,8 +343,9 @@ image{
 }
 
 p{
-    font-size: 2rem;
-    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
 }
 
 /*Contacto*/
@@ -261,6 +399,7 @@ p{
     font-weight: 400;
     margin-bottom: 2rem;
     border: none;
+    cursor: pointer;
 }
 
 .boton--primario{
