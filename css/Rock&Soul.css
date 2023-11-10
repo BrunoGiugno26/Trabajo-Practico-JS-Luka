@@ -323,7 +323,7 @@ image{
     margin-left: 2rem;
 }
 
-.h1-contacto{
+.h1-nosotros{
     font-family: var(--FuenteTexto);
     color: var(--negro);
     font-size: 6rem;
@@ -344,6 +344,22 @@ p{
     height: 70rem;
     background-size: cover;
     background-repeat: repeat;
+}
+
+.h1-contacto{
+    font-family: var(--FuenteTexto);
+    color: var(--negro);
+    font-size: 6rem;
+    padding-top: 6rem;
+    margin-bottom: 10rem;
+}
+
+
+.h1-formulario{
+    font-weight: 700;
+    font-family: var(--FuenteHeading);
+    color: orange;
+    background-color: rgb(184, 100, 17);
 }
 
 .formulario{
@@ -393,4 +409,13 @@ p{
 
 .boton--primario{
     background-color: var(--negro);
+}
+
+.warnings{
+    font-size: 1.6rem;
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+    color: var(--blanco);
+    padding-top: 2rem;
 }
