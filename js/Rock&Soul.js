@@ -12,7 +12,7 @@ function cargar(item){
     mostrador.style.width = "60%";
     seleccion.style.width = "40%";
     seleccion.style.opacity = "1";
-    item.style.border = "2px solid red";
+    item.style.border = "3px solid red";
 
     imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
 
@@ -42,6 +42,7 @@ function quitarBordes(){
 const nombre = document.getElementById("name")
 const email = document.getElementById("email")
 const pass = document.getElementById("password")
+const mensaje = document.getElementById("textarea")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
@@ -62,6 +63,12 @@ form.addEventListener("submit", e=>{
     if(pass.value.length < 8){
         warnings += `La contraseña no es valida <br>`
         entrar = true
+    }
+
+    if(mensaje.value.length <3){
+        warnings+= `El mensaje es muy corto`
+        entrar = true
+        alert("Por favor nos gustaria saber sus preferencias")
     }
 
     if(entrar){
